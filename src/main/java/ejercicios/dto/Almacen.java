@@ -18,6 +18,12 @@ public class Almacen {
 	private String lugar;
 	private int capacidad;
 	
+	public Almacen(int codigo, String lugar, int capacidad) {
+		super();
+		this.codigo = codigo;
+		this.lugar = lugar;
+		this.capacidad = capacidad;
+	}
 	public int getCodigo() {
 		return codigo;
 	}

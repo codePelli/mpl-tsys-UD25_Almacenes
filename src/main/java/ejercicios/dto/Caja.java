@@ -20,6 +20,14 @@ public class Caja {
 	private String contenido;
 	private int valor;
 	
+	public Caja(String numReferencia, String contenido, int valor, Almacen almacen) {
+		super();
+		this.numReferencia = numReferencia;
+		this.contenido = contenido;
+		this.valor = valor;
+		this.almacen = almacen;
+	}
+
 	@ManyToOne
 	@JoinColumn(name = "almacen")
 	private Almacen almacen;
