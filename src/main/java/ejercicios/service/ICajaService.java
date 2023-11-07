@@ -2,17 +2,17 @@ package ejercicios.service;
 
 import java.util.List;
 
-import ejercicios.dto.CajaDTO;
+import ejercicios.dto.Caja;
 
 public interface ICajaService {
 	
-	List<CajaDTO> listCaja();
+	List<Caja> listCaja();
 	
-	CajaDTO cajaPorCod(String numReferencia);
+	Caja cajaPorCod(String numReferencia);
 	
-	CajaDTO saveCaja(CajaDTO caja);
+	Caja saveCaja(Caja caja);
 	
-	CajaDTO updateCaja(String numReferencia, CajaDTO caja);
+	Caja updateCaja(String numReferencia, Caja caja);
 	
 	public void deleteCaja(String numReferencia);
 

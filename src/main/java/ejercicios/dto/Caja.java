@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "caja")
-public class CajaDTO {
+public class Caja {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class CajaDTO {
 	
 	@ManyToOne
 	@JoinColumn(name = "almacen")
-	private AlmacenDTO almacen;
+	private Almacen almacen;
 
 	public String getNumReferencia() {
 		return numReferencia;
@@ -48,11 +48,11 @@ public class CajaDTO {
 		this.valor = valor;
 	}
 
-	public AlmacenDTO getAlmacen() {
+	public Almacen getAlmacen() {
 		return almacen;
 	}
 
-	public void setAlmacen(AlmacenDTO almacen) {
+	public void setAlmacen(Almacen almacen) {
 		this.almacen = almacen;
 	}
 }
