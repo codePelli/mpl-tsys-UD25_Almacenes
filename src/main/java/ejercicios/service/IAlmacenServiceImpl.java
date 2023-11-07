@@ -44,7 +44,7 @@ public class IAlmacenServiceImpl implements IAlmacenService{
 	
 	@GetMapping("/all")
 	public List<Almacen> listAllAlmacen(){
-		return l();
+		return listAlmacen();
 	}
 
 }
