@@ -1,6 +1,5 @@
-drop database if exists ud14_ejercicio05;
-create database if not exists ud14_ejercicio05;
-use ud14_ejercicio05;
+DROP table IF EXISTS almacen;
+DROP table IF EXISTS caja;
 
 CREATE TABLE almacen (
     codigo INT PRIMARY KEY,
