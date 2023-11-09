@@ -14,7 +14,7 @@ public interface IAlmacenService{
 	
 	public Almacen saveAlmacen(Almacen almacen);
 	
-	public Almacen updateAlmacen(Integer codigo, Almacen almacen);
+	public Almacen updateAlmacen(Almacen almacen);
 	
 	public void deleteAlmacen(Integer codigo);
 }

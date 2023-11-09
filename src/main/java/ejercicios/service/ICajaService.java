@@ -12,7 +12,7 @@ public interface ICajaService {
 	
 	Caja saveCaja(Caja caja);
 	
-	Caja updateCaja(String numReferencia, Caja caja);
+	Caja updateCaja(Caja caja);
 	
 	public void deleteCaja(String numReferencia);
 

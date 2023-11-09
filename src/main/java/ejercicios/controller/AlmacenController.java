@@ -19,6 +19,7 @@ import ejercicios.service.IAlmacenService;
 @RequestMapping("/almacen")
 public class AlmacenController {
 
+	@Autowired
     private IAlmacenService almacenService;
 
     @GetMapping
@@ -38,7 +39,7 @@ public class AlmacenController {
 
     @PutMapping("/{codigo}")
     public Almacen updateAlmacen(@PathVariable Integer codigo, @RequestBody Almacen almacen) {
-        return almacenService.updateAlmacen(codigo, almacen);
+        return almacenService.updateAlmacen(almacen);
     }
 
     @DeleteMapping("/{codigo}")

@@ -19,6 +19,7 @@ import ejercicios.service.ICajaService;
 @RequestMapping("/caja")
 public class CajaController {
 	
+	@Autowired
     private ICajaService cajaService;
 
     @GetMapping
@@ -38,7 +39,7 @@ public class CajaController {
 
     @PutMapping("/{numReferencia}")
     public Caja updateAlmacen(@PathVariable String numReferencia, @RequestBody Caja caja) {
-        return cajaService.updateCaja(numReferencia, caja);
+        return cajaService.updateCaja(caja);
     }
 
     @DeleteMapping("/{numReferencia}")
