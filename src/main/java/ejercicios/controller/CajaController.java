@@ -14,15 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import ejercicios.dto.Caja;
 import ejercicios.service.ICajaService;
+import ejercicios.service.ICajaServiceImpl;
 
 @RestController
 @RequestMapping("/caja")
 public class CajaController {
 	
 	@Autowired
-    private ICajaService cajaService;
+    private ICajaServiceImpl cajaService;
 
-    @GetMapping
+    @GetMapping("/list")
     public List<Caja> getAllAlmacenes() {
         return cajaService.listCaja();
     }

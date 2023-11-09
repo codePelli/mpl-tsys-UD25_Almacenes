@@ -28,6 +28,10 @@ public class Caja {
 		this.almacen = almacen;
 	}
 
+	public Caja() {
+		super();
+	}
+
 	@ManyToOne
 	@JoinColumn(name = "almacen")
 	private Almacen almacen;

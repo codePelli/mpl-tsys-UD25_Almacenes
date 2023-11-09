@@ -14,15 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import ejercicios.dto.Almacen;
 import ejercicios.service.IAlmacenService;
+import ejercicios.service.IAlmacenServiceImpl;
 
 @RestController
 @RequestMapping("/almacen")
 public class AlmacenController {
 
 	@Autowired
-    private IAlmacenService almacenService;
+    private IAlmacenServiceImpl almacenService;
 
-    @GetMapping
+	@GetMapping("/list")
     public List<Almacen> getAllAlmacenes() {
         return almacenService.listAlmacen();
     }

@@ -24,6 +24,9 @@ public class Almacen {
 		this.lugar = lugar;
 		this.capacidad = capacidad;
 	}
+	public Almacen() {
+		super();
+	}
 	public int getCodigo() {
 		return codigo;
 	}
